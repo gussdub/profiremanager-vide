@@ -4708,11 +4708,11 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.85rem 1.25rem !important;
+  padding: 0.65rem 0.85rem !important;
   background: #f8fafc;
   border-radius: 6px;
-  margin-bottom: 1.25rem !important;
-  gap: 4rem !important;
+  margin-bottom: 0.5rem !important;
+  gap: 5rem !important;
 }
 
 .detail-item-optimized:last-child {
@@ -4724,7 +4724,7 @@ body {
   color: #64748b;
   font-weight: 500;
   white-space: nowrap;
-  min-width: 150px !important;
+  min-width: 160px !important;
 }
 
 .detail-item-optimized .detail-value {
@@ -4733,7 +4733,7 @@ body {
   font-weight: 600;
   text-align: right;
   flex: 1;
-  margin-left: 2rem !important;
+  margin-left: 3rem !important;
 }
 
 /* Compétences optimisées */
