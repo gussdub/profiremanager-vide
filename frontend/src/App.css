@@ -4673,14 +4673,14 @@ body {
 .detail-column {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 2.5rem;
 }
 
 .detail-section-optimized {
   background: white;
   border: 1px solid #e2e8f0;
   border-radius: 10px;
-  padding: 1rem;
+  padding: 1.25rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   transition: all 0.2s ease;
 }
@@ -4694,8 +4694,8 @@ body {
   font-size: 0.9rem;
   font-weight: 700;
   color: #0f172a;
-  margin-bottom: 0.75rem;
-  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.75rem;
   border-bottom: 2px solid #e2e8f0;
   display: flex;
   align-items: center;
@@ -4706,11 +4706,11 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.65rem 0.75rem;
+  padding: 0.75rem 1rem;
   background: #f8fafc;
   border-radius: 6px;
-  margin-bottom: 0.65rem;
-  gap: 2rem;
+  margin-bottom: 1rem;
+  gap: 3rem;
 }
 
 .detail-item-optimized:last-child {
