@@ -1996,17 +1996,17 @@ const Personnel = () => {
                   </div>
 
                   {/* Colonne droite */}
-                  <div className="detail-column" style={{ display: 'flex', flexDirection: 'column', gap: '3.5rem' }}>
-                    <div className="detail-section detail-section-optimized" style={{ marginBottom: '2rem' }}>
+                  <div className="detail-column" style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
+                    <div className="detail-section detail-section-optimized" style={{ marginBottom: '1.5rem' }}>
                       <h5>🎖️ Professionnel</h5>
                       <div className="detail-list" style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
-                        <div className="detail-item-optimized" style={{ display: 'flex', justifyContent: 'space-between', gap: '5rem', padding: '0.65rem 0.85rem', background: '#f8fafc', borderRadius: '6px', marginBottom: '0.5rem' }}>
-                          <span className="detail-label" style={{ minWidth: '160px', color: '#64748b' }}>Date d'embauche</span>
-                          <span className="detail-value" style={{ marginLeft: '3rem', textAlign: 'right', flex: 1 }}>{selectedUser.date_embauche}</span>
+                        <div className="detail-item-optimized" style={{ display: 'flex', justifyContent: 'space-between', gap: '2.5rem', padding: '0.65rem 0.85rem', background: '#f8fafc', borderRadius: '6px', marginBottom: '0.5rem' }}>
+                          <span className="detail-label" style={{ minWidth: '140px', color: '#64748b' }}>Date d'embauche</span>
+                          <span className="detail-value" style={{ marginLeft: '1.5rem', textAlign: 'right', flex: 1 }}>{selectedUser.date_embauche}</span>
                         </div>
-                        <div className="detail-item-optimized" style={{ display: 'flex', justifyContent: 'space-between', gap: '5rem', padding: '0.65rem 0.85rem', background: '#f8fafc', borderRadius: '6px', marginBottom: '0.5rem' }}>
-                          <span className="detail-label" style={{ minWidth: '160px', color: '#64748b' }}>Ancienneté</span>
-                          <span className="detail-value" style={{ marginLeft: '3rem', textAlign: 'right', flex: 1 }}>
+                        <div className="detail-item-optimized" style={{ display: 'flex', justifyContent: 'space-between', gap: '2.5rem', padding: '0.65rem 0.85rem', background: '#f8fafc', borderRadius: '6px', marginBottom: '0.5rem' }}>
+                          <span className="detail-label" style={{ minWidth: '140px', color: '#64748b' }}>Ancienneté</span>
+                          <span className="detail-value" style={{ marginLeft: '1.5rem', textAlign: 'right', flex: 1 }}>
                             {(() => {
                               const embauche = new Date(selectedUser.date_embauche.split('/').reverse().join('-'));
                               const annees = Math.floor((new Date() - embauche) / (365.25 * 24 * 60 * 60 * 1000));
@@ -2014,9 +2014,9 @@ const Personnel = () => {
                             })()}
                           </span>
                         </div>
-                        <div className="detail-item-optimized" style={{ display: 'flex', justifyContent: 'space-between', gap: '5rem', padding: '0.65rem 0.85rem', background: '#f8fafc', borderRadius: '6px', marginBottom: '0.5rem' }}>
-                          <span className="detail-label" style={{ minWidth: '160px', color: '#64748b' }}>Rôle système</span>
-                          <span className="detail-value" style={{ marginLeft: '3rem', textAlign: 'right', flex: 1 }}>
+                        <div className="detail-item-optimized" style={{ display: 'flex', justifyContent: 'space-between', gap: '2.5rem', padding: '0.65rem 0.85rem', background: '#f8fafc', borderRadius: '6px', marginBottom: '0.5rem' }}>
+                          <span className="detail-label" style={{ minWidth: '140px', color: '#64748b' }}>Rôle système</span>
+                          <span className="detail-value" style={{ marginLeft: '1.5rem', textAlign: 'right', flex: 1 }}>
                             {selectedUser.role === 'admin' ? '👑 Administrateur' : 
                              selectedUser.role === 'superviseur' ? '🎖️ Superviseur' : '👤 Employé'}
                           </span>
@@ -2024,7 +2024,7 @@ const Personnel = () => {
                       </div>
                     </div>
 
-                    <div className="detail-section detail-section-optimized" style={{ marginBottom: '2rem' }}>
+                    <div className="detail-section detail-section-optimized" style={{ marginBottom: '1.5rem' }}>
                       <h5>🛡️ Équipements (EPI)</h5>
                       {userEPIs.length > 0 ? (
                         <div className="epi-view-optimized">
