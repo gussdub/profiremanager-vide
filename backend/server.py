@@ -1816,6 +1816,23 @@ async def attribution_automatique(semaine_debut: str, current_user: User = Depen
                         
                         if not user_dispos:
                             continue  # Skip if not available
+                        
+                        # VÉRIFICATION DES HEURES MAX PAR SEMAINE
+                        # Calculer les heures déjà assignées cette semaine pour cet utilisateur
+                        week_assignations = [a for a in existing_assignations 
+                                           if a["user_id"] == user["id"] and 
+                                           semaine_debut <= a["date"] <= semaine_fin]
+                        
+                        week_hours = 0
+                        for assignation in week_assignations:
+                            type_g = next((t for t in types_garde if t["id"] == assignation["type_garde_id"]), None)
+                            if type_g:
+                                week_hours += type_g.get("duree_heures", 8)
+                        
+                        # Vérifier si ajouter cette garde dépasserait les heures max
+                        heures_max = user.get("heures_max_semaine", 40)
+                        if week_hours + type_garde.get("duree_heures", 8) > heures_max:
+                            continue  # Skip si dépasse les heures max souhaitées
                     else:
                         # Skip temps plein (planning fixe manuel)
                         continue
