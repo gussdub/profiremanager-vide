@@ -4673,7 +4673,7 @@ body {
 .detail-column {
   display: flex;
   flex-direction: column;
-  gap: 3rem !important;
+  gap: 3.5rem !important;
   margin-bottom: 1.5rem !important;
 }
 
