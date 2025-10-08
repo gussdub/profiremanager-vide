@@ -1959,21 +1959,21 @@ const Personnel = () => {
                 {/* Grille 2 colonnes pour TOUTES les sections */}
                 <div className="profile-details-grid-optimized">
                   {/* Colonne gauche */}
-                  <div className="detail-column">
-                    <div className="detail-section detail-section-optimized">
+                  <div className="detail-column" style={{ display: 'flex', flexDirection: 'column', gap: '3.5rem' }}>
+                    <div className="detail-section detail-section-optimized" style={{ marginBottom: '2rem' }}>
                       <h5>📞 Contact</h5>
-                      <div className="detail-list">
-                        <div className="detail-item-optimized">
-                          <span className="detail-label">Email</span>
-                          <span className="detail-value">{selectedUser.email}</span>
+                      <div className="detail-list" style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+                        <div className="detail-item-optimized" style={{ display: 'flex', justifyContent: 'space-between', gap: '5rem', padding: '0.65rem 0.85rem', background: '#f8fafc', borderRadius: '6px', marginBottom: '0.5rem' }}>
+                          <span className="detail-label" style={{ minWidth: '160px', color: '#64748b' }}>Email</span>
+                          <span className="detail-value" style={{ marginLeft: '3rem', textAlign: 'right', flex: 1 }}>{selectedUser.email}</span>
                         </div>
-                        <div className="detail-item-optimized">
-                          <span className="detail-label">Téléphone</span>
-                          <span className="detail-value">{selectedUser.telephone || 'Non renseigné'}</span>
+                        <div className="detail-item-optimized" style={{ display: 'flex', justifyContent: 'space-between', gap: '5rem', padding: '0.65rem 0.85rem', background: '#f8fafc', borderRadius: '6px', marginBottom: '0.5rem' }}>
+                          <span className="detail-label" style={{ minWidth: '160px', color: '#64748b' }}>Téléphone</span>
+                          <span className="detail-value" style={{ marginLeft: '3rem', textAlign: 'right', flex: 1 }}>{selectedUser.telephone || 'Non renseigné'}</span>
                         </div>
-                        <div className="detail-item-optimized">
-                          <span className="detail-label">Contact d'urgence</span>
-                          <span className="detail-value emergency">{selectedUser.contact_urgence || 'Non renseigné'}</span>
+                        <div className="detail-item-optimized" style={{ display: 'flex', justifyContent: 'space-between', gap: '5rem', padding: '0.65rem 0.85rem', background: '#f8fafc', borderRadius: '6px', marginBottom: '0.5rem' }}>
+                          <span className="detail-label" style={{ minWidth: '160px', color: '#64748b' }}>Contact d'urgence</span>
+                          <span className="detail-value emergency" style={{ marginLeft: '3rem', textAlign: 'right', flex: 1 }}>{selectedUser.contact_urgence || 'Non renseigné'}</span>
                         </div>
                       </div>
                     </div>
