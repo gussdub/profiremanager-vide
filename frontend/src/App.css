@@ -8873,7 +8873,7 @@ body {
 .detail-list {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem !important;
+  gap: 0.5rem !important;
 }
 
 .detail-item-modern {
