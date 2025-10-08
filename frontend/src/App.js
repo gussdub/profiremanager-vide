@@ -1978,7 +1978,7 @@ const Personnel = () => {
                       </div>
                     </div>
 
-                    <div className="detail-section detail-section-optimized" style={{ marginBottom: '2rem' }}>
+                    <div className="detail-section detail-section-optimized" style={{ marginBottom: '1.5rem' }}>
                       <h5>📜 Compétences</h5>
                       {selectedUser.formations?.length > 0 ? (
                         <div className="competences-view-optimized">
