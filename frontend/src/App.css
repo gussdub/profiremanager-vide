@@ -4673,16 +4673,18 @@ body {
 .detail-column {
   display: flex;
   flex-direction: column;
-  gap: 2.5rem;
+  gap: 3rem !important;
+  margin-bottom: 1.5rem !important;
 }
 
 .detail-section-optimized {
   background: white;
   border: 1px solid #e2e8f0;
   border-radius: 10px;
-  padding: 1.25rem;
+  padding: 1.5rem !important;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   transition: all 0.2s ease;
+  margin-bottom: 2rem !important;
 }
 
 .detail-section-optimized:hover {
@@ -4694,8 +4696,8 @@ body {
   font-size: 0.9rem;
   font-weight: 700;
   color: #0f172a;
-  margin-bottom: 1rem;
-  padding-bottom: 0.75rem;
+  margin-bottom: 1.25rem !important;
+  padding-bottom: 0.85rem !important;
   border-bottom: 2px solid #e2e8f0;
   display: flex;
   align-items: center;
@@ -4706,15 +4708,15 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.75rem 1rem;
+  padding: 0.85rem 1.25rem !important;
   background: #f8fafc;
   border-radius: 6px;
-  margin-bottom: 1rem;
-  gap: 3rem;
+  margin-bottom: 1.25rem !important;
+  gap: 4rem !important;
 }
 
 .detail-item-optimized:last-child {
-  margin-bottom: 0;
+  margin-bottom: 0 !important;
 }
 
 .detail-item-optimized .detail-label {
@@ -4722,6 +4724,7 @@ body {
   color: #64748b;
   font-weight: 500;
   white-space: nowrap;
+  min-width: 150px !important;
 }
 
 .detail-item-optimized .detail-value {
@@ -4730,6 +4733,7 @@ body {
   font-weight: 600;
   text-align: right;
   flex: 1;
+  margin-left: 2rem !important;
 }
 
 /* Compétences optimisées */
